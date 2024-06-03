@@ -1,4 +1,64 @@
-.hero__section{
- height: 50vh;
- width: 100vw;
+/* Main container for the user list */
+.container {
+    width: 100%;
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: #f9f9f9;
+}
+
+/* Heading styling */
+.container h1 {
+    text-align: center;
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Styling for the user list */
+.container ul {
+    list-style: none;
+    padding: 0;
+}
+
+/* Individual user item */
+.container ul li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 15px;
+    border-bottom: 1px solid #ccc;
+    transition: background-color 0.3s ease;
+}
+
+/* Hover effect for user items */
+.container ul li:hover {
+    background-color: #f1f1f1;
+}
+
+/* User name styling */
+.container ul li .user-name {
+    font-size: 16px;
+    color: #333;
+}
+
+/* User details button styling */
+.container ul li .details-btn {
+    padding: 5px 10px;
+    font-size: 14px;
+    color: #007bff;
+    background-color: transparent;
+    border: 1px solid #007bff;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Hover effect for details button */
+.container ul li .details-btn:hover {
+    background-color: #007bff;
+    color: #fff;
 }

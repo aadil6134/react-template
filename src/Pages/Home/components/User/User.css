@@ -1,0 +1,31 @@
+/* src/components/User.css */
+li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1em;
+    background-color: #f8f9fa;
+    border: 1px solid #dee2e6;
+    border-radius: 4px;
+    margin-bottom: 0.5em;
+  }
+  
+  li div {
+    flex: 1;
+  }
+  
+  li button {
+    margin-left: 0.5em;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 0.5em 1em;
+    cursor: pointer;
+    font-size: 1em;
+    border-radius: 4px;
+  }
+  
+  li button:hover {
+    background-color: #0056b3;
+  }
+  

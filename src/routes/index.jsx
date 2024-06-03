@@ -1,24 +1,8 @@
 import { Route, Routes } from "react-router-dom";
 import MainLayout from "../Layout/MainLayout";
 import Home from "../Pages/Home/Home";
-import AboutUs from "../Pages/AboutUs/AboutUs";
-
-// export const router = createBrowserRouter([
-// 	{
-// 		path: "/",
-// 		element: <MainLayout></MainLayout>,
-// 		children: [
-// 			{
-// 				path: "/",
-// 				element: <Home />,
-// 			},
-// 			{
-// 				path: "/aboutus",
-// 				element: <AboutUs />,
-// 			},
-// 		],
-// 	},
-// ]);
+import AddUser from "../Pages/AddUser/AddUser";
+import UserDetails from "../Pages/UserDetails/UserDetails";
 
 const Routers = () => {
 	return (
@@ -31,9 +15,13 @@ const Routers = () => {
 					path="/"
 					element={<Home />}
 				/>
+				<Route 
+					path="/user/:id" 
+					element={<UserDetails />} 
+				/>
 				<Route
-					path="/aboutus"
-					element={<AboutUs />}
+					path="/add-user"
+					element={<AddUser />}
 				/>
 			</Route>
 		</Routes>
